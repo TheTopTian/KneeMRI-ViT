@@ -14,7 +14,7 @@ from dataset import make_dataset,    \
                     MRNetDataset
 from torch.utils.data import DataLoader
 from model_maxvit import MRNet
-from utils import create_auc_dir,    \
+from utils_maxvit import create_auc_dir,    \
                   create_loss_dir,   \
                   print_stats,       \
                   save_losses,       \
