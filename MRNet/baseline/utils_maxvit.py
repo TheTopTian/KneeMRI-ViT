@@ -125,7 +125,7 @@ def save_checkpoint(Fold_num, epoch, plane, diagnosis, model, optimizer, out_dir
         'optimizer': optimizer.state_dict()
     }
 
-    chkpt = f'cnn_Fold{Fold_num}_{plane}_{diagnosis}_{epoch:02d}.pt'
+    chkpt = f'maxvit_Fold{Fold_num}_{plane}_{diagnosis}_{epoch:02d}.pt'
     torch.save(checkpoint, f'{out_dir}/{chkpt}')
 
 def add_mean_auc(auc_path):
