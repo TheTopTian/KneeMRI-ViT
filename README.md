@@ -18,6 +18,7 @@ Since we need to first classify the diseases, there is already a really famous p
 Swin Transformer is compatible for a broad range of vision tasks, including image classification and dense prediction tasks such as object detection. It is also included in MONAI and shows a promising result in Brain MRI segmentation. Since my job is to do a classification of diseases, I can just use the downsampling part and output the parameter at the bottom of Unet, and input them again in a linear layer and classify the diseases I want. But the result with this method doesn't end up good:
 
 |Diseases|Accuracy|
+| --- | --- |
 |Abnormal|0.79 (95/120)|
 |ACL|0.55 (66/120)|
 |Meniscus|0.57 (68/120)|
