@@ -1,7 +1,11 @@
-# KneeMRI-ViT
-Master thesis
+# Knee MRI Classification & Location
+This is my master thesis project. We aim to use the vision transformers to classify different diseases in knee MRIs and use the attension inside to locate the disease position.
 
-# MRNet
-The file of MRNet is the structure of the dataset, which includes the train and valid, and both of them have 3 different views of a same patient's knee.
+## Dataset
+This time we are going to use the private dataset in Uniklinik Aachen, which contains both the disease and its location. We decided to seperate this task into two different parts: **classification** and **location**. First we need to know whether this patient gets this kind of disease, second find the location of the disease. If the patient doesn't have this disease then the second part will be skipped directly.
 
-There are 3 different kind of diseases included inside. The goal is to use the transformers to do the classification of different diseases.
+Since we need to first classify the diseases, there is already a really famous public knee MRI dataset called **MRNet** which was made by Standford University.
+
+<p align="center">
+  <img src="./images/Different_sides_MRNet.png" alt="Different_sides_MRNet" width="700" height="auto">
+</p>
