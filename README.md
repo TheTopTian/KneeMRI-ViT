@@ -63,11 +63,30 @@ Results of Swin Unet-R are shown in Table 6, we used Praxis with the label 3. He
 |Swin Unet-R (1 loss)|0.550|
 |Swin Unet-R (2 losses)|0.573|
 
-Results of the 3D vision transformers which was trained on Praxis was shown in Table 7, here was a comparison between whether the second loss was used on the attention layer and which attention layer was been trained. These 3 models were trained on label 4, because the latest label 4 was just received when training this model. But here it is mainly needed to observe whether using loss 2 will improve the classification performance of transformers, and decide which attention layer should be used to train is more reasonable:
+Results of the 3D vision transformers which was trained on Praxis was shown in the following table, here was a comparison between whether the second loss was used on the attention layer and which attention layer was been trained. These 3 models were trained on label 4, because the latest label 4 was just received when training this model. But here it is mainly needed to observe whether using loss 2 will improve the classification performance of transformers, and decide which attention layer should be used to train is more reasonable:
 |Method|ACL|
 | --- | --- |
 |3D ViT (1 loss)|0.522|
 |3D ViT (2 losses, with first attention layer)|0.534|
-|3D ViT (2 losses, with last attention layer)|0.575|
+|3D ViT (2 losses, with last attention layer)|**0.575**|
+
+The following table was the results from the DINO v2 (Praxis label 3), the first one with baseline structure was only replace the AlexNet in baseline method with DINO v2, second one was to flat input 3D images as a huge 2D rectangle image, third and fourth was using AlexNet at first to select ACL images then do the comparison whether adding second loss on last attention layer:
+|Method|ACL|PCL|Inner-Meniscus|Outer-Meniscus|
+| --- | --- | --- | --- | --- |
+|With baseline structure|0.550|**0.637**|**0.578**|**0.562**|
+|With flatten|0.571|0.618|0.566|0.561|
+|With AlexNet (1 loss)|0.565||||
+|With AlexNet (2 losses)|**0.612**||||
+
+The following table was the results trained on Praxis dataset, with the label 3. Zoom meant using the zoom package to interpolate the original images from 512 to 256, crop meant using a crop based on the location of diseases which also made the original image from 512 to 256.
+|Method|ACL|PCL|Inner-Meniscus|Outer-Meniscus|
+| --- | --- | --- | --- | --- |
+|Baseline (Original)|**0.827**|0.609|**0.813**|**0.742**|
+|ResNet+Spatial (Original)|0.707|0.791|0.637|0.626|
+|Baseline (Zoom)|**0.773**|0.573|0.753|0.641|
+|MaxViT (Zoom)|0.769|0.637|**0.755**|**0.676**|
+|MaxViT (Crop)|0.668|0.643|0.691|0.664|
+|MaxViT with spatial (crop)|0.629|**0.791**|0.672|0.626|
+
 
 
