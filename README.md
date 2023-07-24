@@ -7,7 +7,7 @@ This time we are going to use the private dataset in Uniklinik Aachen, which con
 Since we need to first classify the diseases, there is already a really famous public knee MRI dataset called **MRNet** which was made by Standford University. It consists of 1370 knee MRI with 1104 (80.6%) **abnormal** cases, 319 (23.3%) **ACL** tears and 508 (37.1%) **meniscal** tears. Each case has 3 different sides which is also the same with the private dataset.
 
 <p align="center">
-  <img src="./images/Different_sides_MRNet.png" alt="Different_sides_MRNet" width="700" height="auto">
+  <img src="./images/Different_sides_MRNet.png" alt="Different_sides_MRNet" width="auto" height="auto">
 </p>
 
 ## Methods with Results
