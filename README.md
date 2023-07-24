@@ -57,3 +57,17 @@ Here were the results from different methods trained on MRNet dataset:
 |MaxViT+spatial attention|Sagittal|**0.951**|0.909|0.788|
 |MaxViT+DINO mask|Sagittal|0.942|0.905|0.788|
 
+Results of Swin Unet-R are shown in Table 6, we used Praxis with the label 3. Here was a comparison between whether using the second loss in segmentation part, only ACL was trained here. And in Figure 25 was the result of location regression, left columns were the ground truth of diseases’ location and right columns were the coordinates’ predictions.
+|Method|ACL|
+| --- | --- |
+|Swin Unet-R (1 loss)|0.550|
+|Swin Unet-R (2 losses)|0.573|
+
+Results of the 3D vision transformers which was trained on Praxis was shown in Table 7, here was a comparison between whether the second loss was used on the attention layer and which attention layer was been trained. These 3 models were trained on label 4, because the latest label 4 was just received when training this model. But here it is mainly needed to observe whether using loss 2 will improve the classification performance of transformers, and decide which attention layer should be used to train is more reasonable:
+|Method|ACL|
+| --- | --- |
+|3D ViT (1 loss)|0.522|
+|3D ViT (2 losses, with first attention layer)|0.534|
+|3D ViT (2 losses, with last attention layer)|0.575|
+
+
