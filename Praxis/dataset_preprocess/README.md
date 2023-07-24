@@ -21,7 +21,7 @@ The second part was the mean shape and crop. Once the mean pixel spacing was cal
 |Sagittal|521.71|521.69|24.92|
 |Transversal|519.34|519.34|27.14|
 
-Here I chose the images have a shape of 512*512 for x-direction and y-direction, but for the z-direction, they still keep their slice number in order to not losing any details from images.
+Here I choose the images have a shape of 512*512 for x-direction and y-direction, but for the z-direction, they still keep their slice number in order to not losing any details from images.
 
 ### 3. Histogram standardization
 The last part was to do the histogram standardization. As each case in the dataset could originate from different sequences, it was crucial to normalize the pixel values within each image. The objective was to ensure that all images exhibited a similar appearance, regardless of their source sequence. To achieve this, a technique called histogram standardization was employed. The process involved training landmark values from each case and calculating their mean value. By applying this mean value to each image, it was able to adjust the pixel values and create a consistent visual representation across all cases. This histogram standardization step was essential in harmonizing the pixel intensities, making the images more comparable and facilitating subsequent analysis.
