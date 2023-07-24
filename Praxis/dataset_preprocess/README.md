@@ -36,5 +36,5 @@ There were 7 different 'projectName's, and some cases had several different labe
 
 The following image was the performance from the previous steps.
 <p align="center">
-  <img src="../../images/interface_software.png" alt="interface_software" width="700" height="auto">
+  <img src="../../images/interface_software.png" alt="interface_software" width="auto" height="auto">
 </p>
