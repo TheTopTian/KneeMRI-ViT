@@ -46,5 +46,14 @@ Here were the results from different methods trained on MRNet dataset:
 |Baseline|Axial|0.921|0.883|0.778|
 ||Sagittal|0.929|0.860|0.766|
 ||Coronal|0.802|0.804|0.788|
-|ResNet+spatial attention
+|ResNet+spatial attention|Multi-Planes|0.923|0.928|0.784|
+|DINO v2+baseline|Sagittal|0.659|0.590|0.626|
+|Swin Unet-R|Axial|0.848|0.707|0.755|
+||Sagittal|0.884|0.774|0.688|
+||Coronal|0.613|0.469|0.630|
+|MaxViT|Axial|0.930|0.900|0.816|
+||Sagittal|0.945|0.903|0.782|
+||Coronal|0.902|**0.931**|**0.823**|
+|MaxViT+spatial attention|Sagittal|**0.951**|0.909|0.788|
+|MaxViT+DINO mask|Sagittal|0.942|0.905|0.788|
 
