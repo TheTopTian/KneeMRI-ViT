@@ -11,17 +11,12 @@ Since we need to first classify the diseases, there is already a really famous p
 </p>
 
 ## Methods with Results
-### Baseline
-
-
-### Swin Unet R
-Swin Transformer is compatible for a broad range of vision tasks, including image classification and dense prediction tasks such as object detection. It is also included in MONAI and shows a promising result in Brain MRI segmentation. Since my job is to do a classification of diseases, I can just use the downsampling part and output the parameter at the bottom of Unet, and input them again in a linear layer and classify the diseases I want. But the result with this method doesn't end up good:
-
-|Diseases|Accuracy|
-| --- | --- |
-|Abnormal|0.79 (95/120)|
-|ACL|0.55 (66/120)|
-|Meniscus|0.57 (68/120)|
-
-### MaxViT
-
+Comparison of 1 output and 3 outputs with MaxViT model on MRNet dataset:
+|Methods|Views|Abnormal|ACL|Meniscus|
+| --- | --- | --- | --- | --- |
+|MaxViT with 1 output|Axial|0.924|0.885|0.806|
+||Sagittal|0.949|0.883|0.801|
+||Coronal|0.865|0.865|0.833|
+|MaxViT with 3 outputs|Axial|0.930|0.900|0.816|
+||Sagittal|0.945|0.903|0.782|
+||Coronal|0.902|0.931|0.823|
