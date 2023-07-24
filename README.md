@@ -14,10 +14,10 @@ Two different datasets were used in this project:
 The private dataset Praxis has a really similar structure compared with the MRNet. Each case within Praxis consists of three distinct views: coronal, sagittal, and transversal. However, in stark contrast to the MRNet dataset, Praxis boasts a significantly larger number of cases, totally 3794. Moreover, the labels associated with Praxis differ substantially from those of the MRNet dataset. In Praxis, the labels provide detailed information in the form of coordinates for numerous diseases.
 
 Praxis had an old label from 2 years before, that one only had 0 or 1 labels similar with the MRNet dataset. Some diseases on the old label and the new label were the same, so they could be compared with each other, for example the most common disease: ACL and meniscus. But some diseases didn't match up with each other some of the cases. Combined with the latest label got from radiologists in May, 4 different versions of labels were made for the following training:
-  label 1: The label from 2 years ago, only had 0 or 1,  
-  label 2: The label extracted from the first json file,
-  label 3: The overlap cases on ACL and meniscus from label 1 and label 2,
-  label 4: The latest label received at the end of May from the radiologists’ group.
+1. label 1: The label from 2 years ago, only had 0 or 1,  
+2. label 2: The label extracted from the first json file,
+3. label 3: The overlap cases on ACL and meniscus from label 1 and label 2,
+4. label 4: The latest label received at the end of May from the radiologists’ group.
 
 The disease distribution in Praxis:
 |Label number (cases)|ACL|PCL|Inner Meniscus|Outer Meniscus|
