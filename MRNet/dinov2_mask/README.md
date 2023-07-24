@@ -3,3 +3,5 @@ This method was using the pretrained DINO v2 to help creating a mask for the ima
 <p align="center">
   <img src="./dino_mask.png" alt="dino_mask" width="auto" height="auto">
 </p>
+
+The performance could be seen in the mask.ipynb file.
