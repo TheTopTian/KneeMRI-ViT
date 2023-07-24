@@ -9,3 +9,8 @@ The left columns were the selected ACL slices by AlexNet as the first step, the 
 <p align="center">
   <img src="./ACL_dino.png" alt="ACL_dino" width="auto" height="auto">
 </p>
+
+# Attention layer, 1 loss compared with 2 losses
+<p align="center">
+  <img src="./AlexNet_DINO_Framework.PNG" alt="AlexNet_DINO" width="auto" height="auto">
+</p>
