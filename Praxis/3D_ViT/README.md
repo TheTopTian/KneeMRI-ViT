@@ -4,3 +4,14 @@ A 3D vision transformers needed to be designed based on the usual ViT structure 
 <p align="center">
   <img src="./3D_ViT_Framework.PNG" alt="3D_ViT_Framework" width="auto" height="auto">
 </p>
+
+# Attention layer
+## With one loss
+<p align="center">
+  <img src="./example_3dvit(1loss).png" alt="3dvit(1loss)" width="auto" height="auto">
+</p>
+
+## With two losses
+<p align="center">
+  <img src="./example_3dvit(2losses).png" alt="3dvit(2losses)" width="auto" height="auto">
+</p>
