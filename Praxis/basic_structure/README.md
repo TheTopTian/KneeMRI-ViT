@@ -10,7 +10,7 @@ The main structure was based on the design of baseline method, first use a model
 
 The following image was the baseline structure:
 <p align="center">
-  <img src="../../images/baseline.png" alt="baseline" width="700" height="auto">
+  <img src="../../images/baseline.png" alt="baseline" width="auto" height="auto">
 </p>
 
 ## train_models
