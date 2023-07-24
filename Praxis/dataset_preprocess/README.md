@@ -28,7 +28,7 @@ The last part was to do the histogram standardization. As each case in the datas
 
 The following image was the performance from the previous steps.
 <p align="center">
-  <img src="../../images/preprocessed_private_dataset.png" alt="preprocessed_private_dataset" width="700" height="auto">
+  <img src="../../images/preprocessed_private_dataset.png" alt="preprocessed_private_dataset" width="auto" height="auto">
 </p>
 
 ## Preprocess of labels
