@@ -32,4 +32,9 @@ The following image was the performance from the previous steps.
 </p>
 
 ## Preprocess of labels
+There were 7 different 'projectName's, and some cases had several different labels under different projects. Here we only used 4 grouped diseases for training, ACL, PCL ,inner-meniscus and outer-meniscus. The methods about how to read the json file to extract labels were shown in the ipynb file.
 
+The following image was the performance from the previous steps.
+<p align="center">
+  <img src="../../images/interface_software.png" alt="interface_software" width="700" height="auto">
+</p>
