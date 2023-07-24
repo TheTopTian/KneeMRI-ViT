@@ -3,3 +3,9 @@ This structure was based on the paper from Liu et al., As it was introduced befo
 <p align="center">
   <img src="./AlexNet_DINO_Framework.PNG" alt="AlexNet_DINO" width="auto" height="auto">
 </p>
+
+# Selected ACL slices with DINO
+The left columns were the selected ACL slices by AlexNet as the first step, the right columns were the attention layer after inputting inside the pretrained (only pretrained on the ImageNet not on the private dataset) DINO v2 model.
+<p align="center">
+  <img src="./ACL_dino.png" alt="ACL_dino" width="auto" height="auto">
+</p>
